@@ -1,0 +1,136 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f3ff4c;
+}
+
+input[type="form"] {
+    border-radius: 10px;
+    border: none;
+}
+
+.container-top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.first-input {
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+}
+
+.cliente-data {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10px;
+    inline-size: 25px;
+    margin-left: 493px;
+}
+
+.cliente-data h3 {
+    margin-bottom: 50px;
+}
+
+.OD {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.OE {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.adicao {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.adicao .OE {
+    margin-top: 100px;
+}
+
+.obs {
+    display: flex;
+    justify-content: center;
+}
+
+.adicao .obs {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos padrão para telas maiores */
+/* Você pode ajustar esses estilos para telas maiores aqui */
+
+/* Estilos para telas médias, como tablets */
+@media screen and (max-width: 1024px) {
+    .cliente-data {
+        margin-left: 0; /* Redefina a margem esquerda para o centro */
+        inline-size: 100%; /* Use a largura total da tela */
+        text-align: center; /* Centralize o conteúdo */
+    }
+
+    .adicao {
+        margin-left: 0; /* Redefina a margem esquerda para o centro */
+    }
+}
+
+/* Estilos para telas menores, como smartphones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduza o tamanho da fonte para dispositivos menores */
+    }
+    
+    .first-input {
+        margin-left: 58px;
+        width: 247px;
+    }
+
+    .container-top img {
+        max-width: 100%; /* Garanta que a imagem não exceda a largura da tela */
+    }
+
+    .cliente-data h3 {
+        margin-bottom: 20px; /* Reduza a margem inferior entre os cabeçalhos */
+        max-width: 346px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 45px;
+    }
+
+    .adicao, .obs {
+        margin-left: 10px; /* Redefina a margem esquerda para o centro */
+    }
+    .OD {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .OE {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .esf {
+        margin-left: -49px;
+    }
+    .eixo {
+        margin-left: -12px;
+    }
+    .dnp {
+        margin-left: -13px;
+    }
+}
